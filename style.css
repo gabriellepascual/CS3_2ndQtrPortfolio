@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("public/assets/bg_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.w3-container {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-left: 50%;
+  transform: translateX(90%);
+  max-width: 50%;
+}
+
+.w3-container h1 {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.1;
+
+  background: linear-gradient(to bottom, 
+    #fff8c4 0%, 
+    #ffe45c 25%, 
+    #ffd000 50%, 
+    #e6af00 75%, 
+    #b8860b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    2px 2px 0 #fff6a8,
+    3px 3px 2px #a66d00,
+    0 0 8px #ffd84d;
+
+  margin-bottom: 0;
+}
+
+.w3-container h2 {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 3em;
+  color: #fff8d1;
+  text-shadow:
+    2px 2px 0 #b88a00,
+    1px 1px 0 #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.w3-container ul {
+  list-style-type: none;
+  text-align: left;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.w3-container li {
+  font-size: 2em;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 10px;
+}
+
+.w3-container a {
+  color: #fff2f8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.w3-container a:hover {
+  text-decoration: underline;
+  color: #ffe5fa;
+}
+
+.w3-container {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  margin-top: 60px;
+  padding-left: 50%;
+  transform: translateX(90%);
+  max-width: 50%;
+
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 50px 50px;
+  backdrop-filter: blur(3px);
+}
