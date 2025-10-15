@@ -47,27 +47,36 @@
     }
 
     nav {
-      background-color: #3d0c0c;
-      display: inline-block;
-      padding: 12px 25px;
-      border-radius: 50px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-      border: 2px solid #732626;
-      margin: 20px auto 30px auto;
+    background-color: #3d0c0c;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid #732626;
+    margin: 20px auto 30px auto;
+    width: fit-content;
+    }
+
+    .nav-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     nav a {
-      color: #ffb3b3;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 0 15px;
-      font-size: 1.1rem;
-      transition: color 0.3s ease, transform 0.2s ease;
+    color: #ffb3b3;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 6px 0;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
     }
 
     nav a:hover {
-      color: #e63946;
-      transform: scale(1.05);
+    color: #e63946;
+    transform: scale(1.05);
     }
 
     table {
@@ -184,10 +193,22 @@
   <h3>friYAY!</h3>
 
   <nav>
-        <a href="https://avieszha.github.io/CS3_2ndQtrPortfolio//2Q1GRubidiumReyes.html">Monday (Avi)</a>
-        <a href="https://ahamsjsjwmsn.github.io/kbql/public/2QG1RubidiumLustre.html">Tuesday (Enzo)</a>
-        <a href="https://apryltagle.github.io/CS3_2ndQtrPortfolio_RubidiumTAGLE/public/2Q1GRubidiumTagle.html">Thursday (Xel)</a>
+  <div class="nav-column">
+    <a href="https://avieszha.github.io/CS3_2ndQtrPortfolio/public//2Q1GRubidiumReyes.html">Monday (Avi)</a>
+    <a href="https://sammr123a.github.io/CS_2NDQTRPORTFOLIO/public/2Q1GRubidiumAustria.html">Monday (Sam)</a>
+  </div>
+
+  <div class="nav-column">
+    <a href="https://ahamsjsjwmsn.github.io/kbql/public/2Q1GRubidiumLustre.html">Tuesday (Enzo)</a>
+    <a href="https://shekinahmarcel.github.io/CS3_2ndQtrPortfolio-/Public/2Q1GRubidiumPuguonShekinah.html">Tuesday (Shek)</a>
+  </div>
+
+  <div class="nav-column">
+    <a href="https://apryltagle.github.io/CS3_2ndQtrPortfolio_RubidiumTAGLE/public/2Q1GRubidiumTagle.html">Thursday (Xel)</a>
+    <a href="https://emj-bans.github.io/CS3_2ndQtrPortfolio/public/2Q1GRubidiumBansil.html">Thursday (EJ)</a>
+  </div>
   </nav>
+
 
   <table>
     <tr>
