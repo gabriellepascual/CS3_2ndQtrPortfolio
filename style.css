@@ -18,9 +18,15 @@ body {
   text-align: center;
   color: white;
   padding-top: 50px;
+  margin-top: 60px;
   padding-left: 50%;
   transform: translateX(90%);
   max-width: 50%;
+
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 50px 50px;
+  backdrop-filter: blur(3px);
 }
 
 .w3-container h1 {
@@ -76,25 +82,26 @@ body {
 .w3-container a {
   color: #fff2f8;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.25s ease-in-out;
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 
-.w3-container a:hover {
+.w3-container a:visited {
+  color: #e4d4f9;
+}
+
+.w3-container a:hover,
+.w3-container a:focus {
+  color: #fff;
+  background: rgba(255, 229, 250, 0.3);
   text-decoration: underline;
-  color: #ffe5fa;
+  box-shadow: 0 0 12px rgba(255, 229, 250, 0.6);
+  transform: scale(1.05);
 }
 
-.w3-container {
-  text-align: center;
-  color: white;
-  padding-top: 50px;
-  margin-top: 60px;
-  padding-left: 50%;
-  transform: translateX(90%);
-  max-width: 50%;
-
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  padding: 50px 50px;
-  backdrop-filter: blur(3px);
+.w3-container a:focus-visible {
+  outline: 2px solid #ffe5fa;
+  outline-offset: 3px;
 }
+
