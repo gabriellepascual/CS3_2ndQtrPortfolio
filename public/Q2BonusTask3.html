@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bonus Task 3</title>
+</head>
+<body>
+  <h2>Press any key</h2>
+  Refresh page to reset
+  <p id="keyPressed"></p>
+  <script>
+    document.body.onkeypress = changeColorPress;
+    function changeColorPress(event){
+        document.body.style.backgroundColor = "royalblue";
+        document.getElementById("keyPressed").textContent = "Key pressed: " + event.key;
+    }
+  </script>
+</body>
+</html>

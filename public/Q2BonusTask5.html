@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bonus Task 5</title>
+    <style>
+        #letter {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        #score {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Reaction Game (Bonus)</h2>
+    <p>Press the key that matches the letter shown below</p>
+    
+    <div id="letter"></div>
+    <div id="message"></div>
+    <div id="score">Score: 0</div>
+
+    <script>
+        const letterDiv = document.getElementById("letter");
+        const messageDiv = document.getElementById("message");
+        const scoreDiv = document.getElementById("score");
+
+        let score = 0;
+
+        function randomLetter() {
+            const letters = "abcdefghijklmnopqrstuvwxyz";
+            return letters[Math.floor(Math.random() * letters.length)];
+        }
+
+        let currentLetter = randomLetter();
+        letterDiv.textContent = currentLetter;
+
+        document.body.onkeypress = function(event) {
+            const pressedKey = event.key.toLowerCase();
+
+            if (pressedKey === currentLetter) {
+                messageDiv.textContent = "✅ Correct!";
+                messageDiv.style.color = "green";
+                score++;
+                scoreDiv.textContent = "Score: " + score;
+                currentLetter = randomLetter();
+                letterDiv.textContent = currentLetter;
+            } else {
+                messageDiv.textContent = "❌ Try again!";
+                messageDiv.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

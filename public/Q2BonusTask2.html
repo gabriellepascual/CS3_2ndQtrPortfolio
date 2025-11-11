@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bonus Task 2</title>
+</head>
+<body>
+    <h1>Hover over the box</h1>
+    <div id="box" style="width:100px; height:100px; background:red;">
+    </div>
+<script>
+    const box = document.getElementById("box");
+    
+    box.onmouseover = changeColorScale;
+    box.onmouseout = resetBox;
+
+    function changeColorScale() {
+        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        box.style.backgroundColor = randomColor;
+        box.style.transform = "scale(1.2)";
+    }
+      
+    box.onmouseout = resetBox;
+
+    function resetBox() {
+        box.style.backgroundColor = "red";
+        box.style.transform = "scale(1)";
+    }
+</script>
+
+</body>
+</html>

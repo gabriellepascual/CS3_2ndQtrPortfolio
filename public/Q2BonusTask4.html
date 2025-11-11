@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BonusTask 4</title>
+</head>
+<body>
+    <h2>Event Responder</h2>
+
+    <button id="myButton">Click me</button>
+    <p id="keyMessage"></p>
+
+    <div id="box" style="width:100px; height:100px; background:red; transition:0.3s;"></div>
+
+    <script>
+        const btn = document.getElementById("myButton");
+        btn.onclick = changeButtonText;
+
+        function changeButtonText() {
+            btn.textContent = "Hi";
+        }
+
+        const box = document.getElementById("box");
+        box.onmouseover = rotateBox;
+        box.onmouseout = resetBox;
+
+        function rotateBox() {
+            box.style.transform = "rotate(45deg)";
+        }
+
+        function resetBox() {
+            box.style.transform = "rotate(0deg)";
+        }
+
+        document.body.onkeypress = showKeyMessage;
+    </script>
+</body>
+</html>
